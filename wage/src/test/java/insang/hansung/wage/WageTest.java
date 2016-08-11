@@ -47,5 +47,10 @@ public class WageTest {
 	public void test_caculatePay_with_invalid_inputs_more_than_40() {
 		int wage = Wage.calculatePay(Proficiency.B, 50);
 	}
+	
+	@Test(expected=InvalidInputException.class)
+	public void test_caculatePay_with_invalid_inputs_more_than_100() {
+		int wage = Wage.calculatePay(Proficiency.B, 150);
+	}
 
 }
