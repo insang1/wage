@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-
+// data driven tests
 @RunWith(Parameterized.class)
 public class WageTest {
 	
